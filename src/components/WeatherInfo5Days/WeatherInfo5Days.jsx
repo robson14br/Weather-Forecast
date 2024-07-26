@@ -12,7 +12,7 @@ function WeatherInfo5Days({ weather5Days }) {
     }
   }
 
-  const nextFiveDays = Object.values(dailyForecast).slice(0, 6);
+  const nextFiveDays = Object.values(dailyForecast).slice(1, 6);
 
   function convertDate(date) {
     const newDate = new Date(date.dt * 1000).toLocaleDateString("pt-BR", {
